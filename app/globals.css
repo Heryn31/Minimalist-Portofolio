@@ -1,0 +1,197 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to black and white only color scheme */
+  --background: oklch(1 0 0); /* Pure white */
+  --foreground: oklch(0 0 0); /* Pure black */
+  --card: oklch(0.98 0 0); /* Off-white */
+  --card-foreground: oklch(0 0 0); /* Pure black */
+  --popover: oklch(1 0 0); /* Pure white */
+  --popover-foreground: oklch(0 0 0); /* Pure black */
+  --primary: oklch(0 0 0); /* Pure black */
+  --primary-foreground: oklch(1 0 0); /* Pure white */
+  --secondary: oklch(0.5 0 0); /* Medium gray */
+  --secondary-foreground: oklch(1 0 0); /* Pure white */
+  --muted: oklch(0.95 0 0); /* Light gray */
+  --muted-foreground: oklch(0.3 0 0); /* Dark gray */
+  --accent: oklch(0 0 0); /* Pure black */
+  --accent-foreground: oklch(1 0 0); /* Pure white */
+  --destructive: oklch(0.3 0 0); /* Dark gray for destructive */
+  --destructive-foreground: oklch(1 0 0); /* Pure white */
+  --border: oklch(0.9 0 0); /* Light gray border */
+  --input: oklch(0.98 0 0); /* Off-white input */
+  --ring: oklch(0 0 0 / 0.3); /* Black ring with opacity */
+  --chart-1: oklch(0.2 0 0); /* Dark gray */
+  --chart-2: oklch(0.4 0 0); /* Medium-dark gray */
+  --chart-3: oklch(0.6 0 0); /* Medium gray */
+  --chart-4: oklch(0.8 0 0); /* Light gray */
+  --chart-5: oklch(0.9 0 0); /* Very light gray */
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0 0); /* Off-white */
+  --sidebar-foreground: oklch(0 0 0); /* Pure black */
+  --sidebar-primary: oklch(1 0 0); /* Pure white */
+  --sidebar-primary-foreground: oklch(0 0 0); /* Pure black */
+  --sidebar-accent: oklch(0 0 0); /* Pure black */
+  --sidebar-accent-foreground: oklch(1 0 0); /* Pure white */
+  --sidebar-border: oklch(0.9 0 0); /* Light gray border */
+  --sidebar-ring: oklch(0 0 0 / 0.3); /* Black ring with opacity */
+  --font-poppins: "Poppins", sans-serif;
+  --font-manrope: "Manrope", serif;
+}
+
+.dark {
+  /* Updated dark mode to pure black with neon white glow effects */
+  --background: oklch(0 0 0); /* Pure black */
+  --foreground: oklch(1 0 0); /* Pure white */
+  --card: oklch(0.05 0 0); /* Very dark gray */
+  --card-foreground: oklch(1 0 0); /* Pure white */
+  --popover: oklch(0 0 0); /* Pure black */
+  --popover-foreground: oklch(1 0 0); /* Pure white */
+  --primary: oklch(1 0 0); /* Pure white */
+  --primary-foreground: oklch(0 0 0); /* Pure black */
+  --secondary: oklch(0.2 0 0); /* Dark gray */
+  --secondary-foreground: oklch(1 0 0); /* Pure white */
+  --muted: oklch(0.1 0 0); /* Very dark gray */
+  --muted-foreground: oklch(0.7 0 0); /* Light gray */
+  --accent: oklch(1 0 0); /* Pure white */
+  --accent-foreground: oklch(0 0 0); /* Pure black */
+  --destructive: oklch(0.7 0 0); /* Light gray for destructive */
+  --destructive-foreground: oklch(0 0 0); /* Pure black */
+  --border: oklch(0.2 0 0); /* Dark gray border */
+  --input: oklch(0.05 0 0); /* Very dark gray input */
+  --ring: oklch(1 0 0 / 0.5); /* White ring with opacity */
+  --chart-1: oklch(0.8 0 0); /* Light gray */
+  --chart-2: oklch(0.6 0 0); /* Medium gray */
+  --chart-3: oklch(0.4 0 0); /* Medium-dark gray */
+  --chart-4: oklch(0.2 0 0); /* Dark gray */
+  --chart-5: oklch(0.1 0 0); /* Very dark gray */
+  --sidebar: oklch(0.05 0 0); /* Very dark gray */
+  --sidebar-foreground: oklch(1 0 0); /* Pure white */
+  --sidebar-primary: oklch(1 0 0); /* Pure white */
+  --sidebar-primary-foreground: oklch(0 0 0); /* Pure black */
+  --sidebar-accent: oklch(0.2 0 0); /* Dark gray */
+  --sidebar-accent-foreground: oklch(1 0 0); /* Pure white */
+  --sidebar-border: oklch(0.2 0 0); /* Dark gray border */
+  --sidebar-ring: oklch(1 0 0 / 0.5); /* White ring with opacity */
+}
+
+/* Added neon glow effects for dark mode */
+.dark .neon-glow {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4), 0
+    0 20px rgba(255, 255, 255, 0.2);
+}
+
+.dark .neon-border {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .neon-button {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark .neon-button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.4), 0 0 35px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Added subtle animations for neon effects */
+@keyframes neon-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.dark .neon-pulse {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: var(--font-poppins);
+  --font-serif: var(--font-poppins);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300 font-sans;
+  }
+
+  /* Big title styles */
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold font-sans;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-sans;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold font-sans;
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold font-sans;
+  }
+
+  h5 {
+    @apply text-xl md:text-2xl lg:text-3xl font-medium font-sans;
+  }
+
+  h6 {
+    @apply text-lg md:text-xl lg:text-2xl font-medium font-sans;
+  }
+
+  /* Added vertical writing mode for Japanese text */
+  .writing-mode-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
