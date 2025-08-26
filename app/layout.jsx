@@ -10,9 +10,12 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: "Portfolio - Web Designer & Developer",
+  title: "Herinantenaina Arnaud Michael",
   description: "Professional portfolio showcasing web design and development projects",
   generator: "v0.app",
+  icons: {
+    icon: "/logo.png", // chemin depuis /public
+  },
 }
 
 export default function RootLayout({ children }) {
