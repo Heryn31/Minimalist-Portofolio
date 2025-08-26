@@ -9,54 +9,46 @@ import { GlitchText } from "./glitch-text"
 export function ProjectsSection() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Madagascar National Park",
       description:
         "Modern e-commerce solution built with Next.js, featuring real-time inventory, payment processing, and admin dashboard.",
       image: "/modern-ecommerce-interface.png",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma"],
+      technologies: ["React.js", "JavaScript", "Bootstrap"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Task Management App",
+      title: "Streamusic",
       description:
         "Collaborative task management application with real-time updates, team collaboration, and project tracking.",
       image: "/task-management-dashboard.png",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+      technologies: ["Kotlin", "Jetpack Compose", "Node.js", "Socket.io", "MongoDB"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Portfolio Website",
+      title: "My Location",
       description:
         "Responsive portfolio website for a creative agency, featuring smooth animations and optimized performance.",
       image: "/creative-agency-portfolio.png",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      technologies: ["React.js", "Spring Boot/Express.js", "Tailwind CSS"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Weather Dashboard",
+      title: "Blooming",
       description: "Interactive weather dashboard with location-based forecasts, charts, and weather alerts.",
       image: "/preview/project4.png",
-      technologies: ["Vue.js", "Chart.js", "Weather API"],
+      technologies: ["React.js", "Express.js", "TypeScript"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Social Media App",
+      title: "Sehatra.com",
       description:
         "Full-stack social media application with user authentication, real-time messaging, and content sharing.",
       image: "/social-media-app-interface.png",
-      technologies: ["React Native", "Firebase", "Redux"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Learning Platform",
-      description: "Online learning platform with course management, progress tracking, and interactive quizzes.",
-      image: "/online-learning-platform.png",
-      technologies: ["Next.js", "Supabase", "Tailwind CSS"],
+      technologies: ["React.js", "Django", "Rest API"],
       liveUrl: "#",
       githubUrl: "#",
     },

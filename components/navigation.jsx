@@ -57,7 +57,7 @@ export function Navigation() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <a href="#" className="font-sans text-2xl font-bold text-foreground">
-              Portfolio
+              heryn.
             </a>
           </motion.div>
 

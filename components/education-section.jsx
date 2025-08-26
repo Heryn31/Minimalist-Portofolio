@@ -9,24 +9,16 @@ export function EducationSection() {
   const education = [
     {
       icon: <GraduationCap className="w-6 h-6 text-primary" />,
-      degree: "Bachelor of Computer Science",
-      institution: "University of Technology",
-      year: "2018 - 2022",
-      description: "Specialized in web development and user interface design",
-    },
-    {
-      icon: <Award className="w-6 h-6 text-primary" />,
-      degree: "Full Stack Web Development",
-      institution: "FreeCodeCamp Certification",
-      year: "2021",
-      description: "Comprehensive certification covering modern web technologies",
+      degree: "General computer science - Bachelor’s degree",
+      institution: "Ecole Nationale d'Informatique, Fianarantsoa",
+      year: "2022 - 2025",
+      description: "Specialized in web development and network administration",
     },
     {
       icon: <BookOpen className="w-6 h-6 text-primary" />,
-      degree: "UX/UI Design Bootcamp",
-      institution: "Design Institute",
-      year: "2020",
-      description: "Intensive program focused on user-centered design principles",
+      degree: "High school diploma",
+      institution: "LARA, Antsirabe",
+      year: "2022",
     },
   ]
 
@@ -42,7 +34,7 @@ export function EducationSection() {
         >
           <GlitchText text="Education" className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" />
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Continuous learning and professional development in web technologies and design
+            Continuous learning and professional development in technologies
           </p>
         </motion.div>
 

@@ -35,11 +35,6 @@ export function AboutSection() {
           className="text-center mb-16"
         >
           <GlitchText text="About Me" className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" />
-          <p className="font-serif text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate web designer and developer with over 5 years of experience creating digital solutions that
-            combine beautiful design with robust functionality. I specialize in modern web technologies and love
-            bringing creative ideas to life.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -63,7 +58,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="font-sans text-2xl font-semibold text-foreground">My Journey</h3>
+            <h3 className="font-sans text-2xl font-semibold text-foreground">Hi, who are you?</h3>
             <p className="font-serif text-muted-foreground leading-relaxed">
               Started as a graphic designer, I discovered my passion for web development and have been creating digital
               experiences ever since. I believe in the power of good design to solve real problems and create meaningful

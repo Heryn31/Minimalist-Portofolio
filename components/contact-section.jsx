@@ -33,19 +33,19 @@ export function ContactSection() {
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
       title: "Email",
-      value: "hello@example.com",
-      link: "mailto:hello@example.com",
+      value: "herynnantenaina31@example.com",
+      link: "mailto:herynnantenaina31@example.com",
     },
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "0343050971",
+      link: "0343050971",
     },
     {
       icon: <MapPin className="w-6 h-6 text-primary" />,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Fianarantsoa, HM",
       link: "#",
     },
   ]

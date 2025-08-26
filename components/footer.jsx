@@ -22,8 +22,8 @@ export function Footer() {
         >
           {/* Logo */}
           <div className="mb-8">
-            <h3 className="font-sans text-2xl font-bold text-card-foreground">Portfolio</h3>
-            <p className="font-serif text-muted-foreground mt-2">Web Designer & Developer</p>
+            <h3 className="font-sans text-2xl font-bold text-card-foreground">heryn.</h3>
+            <p className="font-serif text-muted-foreground mt-2">Full stack JavaScript</p>
           </div>
 
           {/* Social Links */}
@@ -54,7 +54,7 @@ export function Footer() {
             className="pt-8 border-t border-border"
           >
             <p className="font-serif text-muted-foreground flex items-center justify-center gap-2">
-              © 2024 Portfolio. Made with <Heart className="w-4 h-4 text-primary" fill="currentColor" /> using React &
+              © 2024 Made by heryn using React &
               Tailwind CSS
             </p>
           </motion.div>
