@@ -10,47 +10,43 @@ export function ProjectsSection() {
   const projects = [
     {
       title: "Madagascar National Park",
-      description:
-        "Modern e-commerce solution built with Next.js, featuring real-time inventory, payment processing, and admin dashboard.",
-      image: "/modern-ecommerce-interface.png",
-      technologies: ["React.js", "JavaScript", "Bootstrap"],
+      description: "Design and development of an ergonomic web application for Madagascar National Park, focusing on usability and human-computer interaction.",
+      image: "/park.png",
+      technologies: ["ExpressJS", "NodeJS", "ReactJS"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Heryn31/Project-IHM.git",
     },
     {
       title: "Streamusic",
-      description:
-        "Collaborative task management application with real-time updates, team collaboration, and project tracking.",
-      image: "/task-management-dashboard.png",
-      technologies: ["Kotlin", "Jetpack Compose", "Node.js", "Socket.io", "MongoDB"],
+      description: "Mobile audio streaming application offering simultaneous music listening and collaborative features for an interactive user experience.",
+      image: "/notFound.png",
+      technologies: ["Kotlin", "Jetpack Compose", "NodeJS", "SocketIO", "Firebase Authentication"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Heryn31/Streamusic.git",
     },
     {
-      title: "My Location",
-      description:
-        "Responsive portfolio website for a creative agency, featuring smooth animations and optimized performance.",
-      image: "/creative-agency-portfolio.png",
-      technologies: ["React.js", "Spring Boot/Express.js", "Tailwind CSS"],
+      title: "Carlocation",
+      description: "Car rental management web application developed with two different technology stacks.",
+      image: "/location.png",
+      technologies: ["Spring Boot", "Java", "ExpressJS", "NodeJS", "ReactJS"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Heryn31/Project-Spring-Boot---Java.git",
     },
     {
       title: "Blooming",
-      description: "Interactive weather dashboard with location-based forecasts, charts, and weather alerts.",
-      image: "/preview/project4.png",
-      technologies: ["React.js", "Express.js", "TypeScript"],
+      description: "Educational platform introducing children to technology with a specially designed interface for young users.",
+      image: "/notFound.png",
+      technologies: ["React", "Express", "TypeScript"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/SafeZoneProject/frontMyBooming.git",
     },
     {
       title: "Sehatra.com",
-      description:
-        "Full-stack social media application with user authentication, real-time messaging, and content sharing.",
-      image: "/social-media-app-interface.png",
-      technologies: ["React.js", "Django", "Rest API"],
+      description: "Improved the interface and user experience of the company website with modern, intuitive, and consistent pages.",
+      image: "/sehatra.png",
+      technologies: ["Django Rest", "Python", "ReactJS"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Heryn31/Stage-Sehatra.git",
     },
   ]
 
@@ -108,14 +104,19 @@ export function ProjectsSection() {
                   </div>
 
                   <div className="flex gap-3">
-                    <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                  {project.githubUrl && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="flex-1 bg-transparent"
+                      asChild
+                    >
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
-                    <Button size="sm" variant="outline" className="flex-1 bg-transparent">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
+                  )}
                   </div>
                 </CardContent>
               </Card>

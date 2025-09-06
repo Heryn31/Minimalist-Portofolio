@@ -9,23 +9,23 @@ export function SkillsSection() {
     {
       title: "Frontend",
       skills: [
-        { name: "React.js", level: 95 },
-        { name: "Next.js", level: 90 },
-        { name: "TypeScript", level: 88 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Framer Motion", level: 85 },
+        { name: "JavaScript", level: 89 },
+        { name: "React.js", level: 90 },
+        { name: "TypeScript", level: 70 },
+        { name: "Tailwind CSS", level: 89 },
+        { name: "Framer Motion", level: 90 },
       ],
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 87 },
-        { name: "Express.js", level: 95 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 82 },
-        { name: "Django Rest API", level: 78 },
-        { name: "Laravel", level: 60 },
-        { name: "Spring Boot", level: 60 },
+        { name: "Node.js", level: 89 },
+        { name: "Express.js", level: 89 },
+        { name: "Java", level: 65 },
+        { name: "Python", level: 80 },
+        { name: "Django Rest API", level: 75 },
+        { name: "Kotlin", level: 60 },
+        { name: "Spring Boot", level: 65 },
       ],
     },
     {
@@ -40,7 +40,7 @@ export function SkillsSection() {
     },
   ]
 
-  const languages = ["JavaScript", "TypeScript", "Python", "HTML5", "CSS3", "Java", "SQL", "PHP"]
+  const languages = ["JavaScript", "TypeScript", "Python", "HTML5", "CSS3", "Java", "SQL", "Python"]
 
   return (
     <section id="skills" className="py-20 bg-background">
