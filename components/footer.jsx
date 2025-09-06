@@ -23,7 +23,7 @@ export function Footer() {
           {/* Logo */}
           <div className="mb-8">
             <h3 className="font-sans text-2xl font-bold text-card-foreground">heryn.</h3>
-            <p className="font-serif text-muted-foreground mt-2">Full stack JavaScript</p>
+            <p className="font-serif text-muted-foreground mt-2">Full stack web/mobile developer</p>
           </div>
 
           {/* Social Links */}

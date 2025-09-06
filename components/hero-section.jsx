@@ -71,9 +71,14 @@ export function HeroSection() {
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
-              Download CV
-            </Button>
+            <a
+              href="/Herinantenaina.pdf"
+              download="Herinantenaina.pdf"
+            >
+              <Button variant="outline" size="lg">
+                Download CV
+              </Button>
+            </a>
           </motion.div>
 
           <motion.div

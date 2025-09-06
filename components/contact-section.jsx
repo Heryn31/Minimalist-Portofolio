@@ -33,8 +33,8 @@ export function ContactSection() {
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
       title: "Email",
-      value: "herynnantenaina31@example.com",
-      link: "mailto:herynnantenaina31@example.com",
+      value: "herynnantenaina31@gmail.com",
+      link: "mailto:herynnantenaina31@gmail.com",
     },
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
