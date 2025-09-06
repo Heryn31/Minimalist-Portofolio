@@ -59,7 +59,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Full stack JavaScript developer
+            Full stack Web/Mobile developer
           </motion.p>
 
           <motion.div
