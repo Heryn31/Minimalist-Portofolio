@@ -19,7 +19,7 @@ export function HeroSection() {
         transition={{ delay: 1.2, duration: 0.8 }}
       >
         <div className="w-px h-16 bg-foreground/30 mb-4"></div>
-        <div className="writing-mode-vertical text-foreground/70 font-sans text-lg tracking-wider">ポートフォリオ</div>
+        <div className="writing-mode-vertical text-[var(--primary)]/70 font-sans text-lg tracking-wider">ポートフォリオ</div>
         <div className="w-px h-16 bg-foreground/30 mt-4"></div>
       </motion.div>
 
@@ -31,7 +31,7 @@ export function HeroSection() {
         transition={{ delay: 1.2, duration: 0.8 }}
       >
         <div className="w-px h-16 bg-foreground/30 mb-4"></div>
-        <div className="writing-mode-vertical text-foreground/70 font-sans text-lg tracking-wider">デベロッパー</div>
+        <div className="writing-mode-vertical text-[var(--primary)]/70 font-sans text-lg tracking-wider">デベロッパー</div>
         <div className="w-px h-16 bg-foreground/30 mt-4"></div>
       </motion.div>
 
@@ -47,10 +47,13 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <GlitchText
-              text="Herinantenaina Arnaud Michael"
-              className="font-sans text-5xl md:text-7xl font-bold text-foreground mb-6"
-            />
+            <h1 className="font-sans text-5xl md:text-6xl font-bold mb-6">
+              <span className="text-[var(--primary)]">H</span>erinantenaina{' '}
+              <span className="text-[var(--primary)]">A</span>rnaud {' '}
+              <span className="text-[var(--primary)]">M</span>ichael
+            </h1>
+
+
           </motion.div>
 
           <motion.p
@@ -59,7 +62,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Full stack Web/Mobile developer
+            Développeur Web - Mobile
           </motion.p>
 
           <motion.div
@@ -69,14 +72,14 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              View My Work
+               Voir mes travails
             </Button>
             <a
               href="/Herinantenaina.pdf"
               download="Herinantenaina.pdf"
             >
-              <Button variant="outline" size="lg">
-                Download CV
+              <Button variant="default" size="lg">
+                Telecharger le CV
               </Button>
             </a>
           </motion.div>
@@ -87,13 +90,13 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/Heryn31" className="text-muted-foreground hover:text-primary transition-colors">
               <Github size={24} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/heryn31/" className="text-muted-foreground hover:text-primary transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="mailto:herynnantenaina31@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
               <Mail size={24} />
             </a>
           </motion.div>

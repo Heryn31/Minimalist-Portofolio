@@ -7,20 +7,36 @@ import { GlitchText } from "./glitch-text"
 
 export function EducationSection() {
   const education = [
-    {
-      icon: <GraduationCap className="w-6 h-6 text-primary" />,
-      degree: "General computer science - Bachelor’s degree",
-      institution: "Ecole Nationale d'Informatique, Fianarantsoa",
-      year: "2022 - 2025",
-      description: "Specialized in web development and network administration",
-    },
-    {
-      icon: <BookOpen className="w-6 h-6 text-primary" />,
-      degree: "High school diploma",
-      institution: "LARA, Antsirabe",
-      year: "2022",
-    },
-  ]
+  {
+    icon: <GraduationCap className="w-6 h-6 text-primary" />,
+    degree: "Licence 3 Informatique",
+    institution: "École Nationale d'Informatique, Fianarantsoa",
+    year: "2024 - 2025",
+    description: "Spécialisation en développement web et administration réseau",
+  },
+  {
+    icon: <GraduationCap className="w-6 h-6 text-primary" />,
+    degree: "Licence 2 Informatique",
+    institution: "École Nationale d'Informatique, Fianarantsoa",
+    year: "2023 - 2024",
+    description: "Approfondissement des bases en programmation et systèmes informatiques",
+  },
+  {
+    icon: <GraduationCap className="w-6 h-6 text-primary" />,
+    degree: "Licence 1 Informatique",
+    institution: "École Nationale d'Informatique, Fianarantsoa",
+    year: "2022 - 2023",
+    description: "Introduction aux concepts fondamentaux de l’informatique",
+  },
+  {
+    icon: <BookOpen className="w-6 h-6 text-primary" />,
+    degree: "Baccalauréat Scientifique",
+    institution: "LARA, Antsirabe",
+    year: "2022",
+    description: "Spécialité Mathématiques et Sciences",
+  },
+];
+
 
   return (
     <section id="education" className="py-20 bg-background">
@@ -32,10 +48,14 @@ export function EducationSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <GlitchText text="Education" className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" />
+          <GlitchText 
+            text="Éducation" 
+            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" 
+          />
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Continuous learning and professional development in technologies
+            Apprentissage continu et développement professionnel dans le domaine des technologies
           </p>
+
         </motion.div>
 
         <div className="max-w-4xl mx-auto">

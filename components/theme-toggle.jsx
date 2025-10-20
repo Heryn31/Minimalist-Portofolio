@@ -4,6 +4,7 @@ import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
+import {toast} from "sonner"
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
@@ -21,7 +22,11 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => {
+      toast.success("Thème changé !")
+      setTheme(theme === "light" ? "dark" : "light")
+}}
+
       className="neon-button relative overflow-hidden"
     >
       <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

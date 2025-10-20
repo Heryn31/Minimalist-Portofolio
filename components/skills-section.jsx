@@ -52,13 +52,14 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <GlitchText
-            text="Languages & Technologies"
-            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
-          />
-          <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            My technical expertise spans across modern web technologies and design tools
-          </p>
+         <GlitchText
+  text="Langages & Technologies"
+  className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
+/>
+<p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+  Mon expertise technique couvre les technologies web modernes ainsi que les outils de design.
+</p>
+
         </motion.div>
 
         {/* Programming Languages */}
@@ -69,7 +70,10 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h3 className="font-sans text-2xl font-semibold text-foreground mb-8 text-center">Programming Languages</h3>
+          <h3 className="font-sans text-2xl font-semibold text-foreground mb-8 text-center">
+            Langages de programmation
+          </h3>
+
           <div className="flex flex-wrap justify-center gap-4">
             {languages.map((language, index) => (
               <motion.div

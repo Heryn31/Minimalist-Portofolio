@@ -44,7 +44,7 @@ export function ContactSection() {
     },
     {
       icon: <MapPin className="w-6 h-6 text-primary" />,
-      title: "Location",
+      title: "Localisation",
       value: "Fianarantsoa, HM",
       link: "#",
     },
@@ -60,9 +60,13 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <GlitchText text="Get In Touch" className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" />
+          <GlitchText 
+            text="Contactez-moi" 
+            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" 
+          />
+
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.
+            Prenez contact avec moi pour discuter de vos projets, collaborations ou toute autre opportunité passionnante.
           </p>
         </motion.div>
 
@@ -76,12 +80,12 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="font-sans text-2xl font-semibold text-foreground mb-6">Let's Connect</h3>
+              <h3 className="font-sans text-2xl font-semibold text-foreground mb-6">Entrons en contact</h3>
               <p className="font-serif text-muted-foreground leading-relaxed mb-8">
-                I'm always interested in new opportunities and exciting projects. Whether you have a question or just
-                want to say hi, I'll try my best to get back to you!
+                Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Que vous ayez une question ou que vous souhaitiez simplement me dire bonjour, je ferai de mon mieux pour vous répondre !
               </p>
             </div>
+
 
             <div className="grid grid-cols-3 gap-4">
               {contactInfo.map((info, index) => (
@@ -118,7 +122,7 @@ export function ContactSection() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block font-serif text-sm font-medium text-card-foreground mb-2">
-                        Name
+                        Nom
                       </label>
                       <Input
                         id="name"
@@ -128,7 +132,7 @@ export function ContactSection() {
                         value={formData.name}
                         onChange={handleChange}
                         className="bg-input border-border focus:ring-primary focus:border-primary"
-                        placeholder="Your name"
+                        placeholder="Votre nom"
                       />
                     </div>
                     <div>
@@ -143,14 +147,14 @@ export function ContactSection() {
                         value={formData.email}
                         onChange={handleChange}
                         className="bg-input border-border focus:ring-primary focus:border-primary"
-                        placeholder="your.email@example.com"
+                        placeholder="Votre email"
                       />
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="subject" className="block font-serif text-sm font-medium text-card-foreground mb-2">
-                      Subject
+                      Sujet
                     </label>
                     <Input
                       id="subject"
@@ -160,7 +164,7 @@ export function ContactSection() {
                       value={formData.subject}
                       onChange={handleChange}
                       className="bg-input border-border focus:ring-primary focus:border-primary"
-                      placeholder="What's this about?"
+                      placeholder="Sujet du message"
                     />
                   </div>
 
@@ -176,7 +180,7 @@ export function ContactSection() {
                       value={formData.message}
                       onChange={handleChange}
                       className="bg-input border-border focus:ring-primary focus:border-primary resize-none"
-                      placeholder="Tell me about your project..."
+                      placeholder="Votre message ici..."
                     />
                   </div>
 
@@ -186,7 +190,7 @@ export function ContactSection() {
                     size="lg"
                   >
                     <Send className="w-4 h-4 mr-2" />
-                    Send Message
+                    Envoyer le message
                   </Button>
                 </form>
               </CardContent>

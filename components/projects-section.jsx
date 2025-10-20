@@ -8,47 +8,48 @@ import { GlitchText } from "./glitch-text"
 
 export function ProjectsSection() {
   const projects = [
-    {
-      title: "Madagascar National Park",
-      description: "Design and development of an ergonomic web application for Madagascar National Park, focusing on usability and human-computer interaction.",
-      image: "/park.png",
-      technologies: ["ExpressJS", "NodeJS", "ReactJS"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Heryn31/Project-IHM.git",
-    },
-    {
-      title: "Streamusic",
-      description: "Mobile audio streaming application offering simultaneous music listening and collaborative features for an interactive user experience.",
-      image: "/notFound.png",
-      technologies: ["Kotlin", "Jetpack Compose", "NodeJS", "SocketIO", "Firebase Authentication"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Heryn31/Streamusic.git",
-    },
-    {
-      title: "Carlocation",
-      description: "Car rental management web application developed with two different technology stacks.",
-      image: "/location.png",
-      technologies: ["Spring Boot", "Java", "ExpressJS", "NodeJS", "ReactJS"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Heryn31/Project-Spring-Boot---Java.git",
-    },
-    {
-      title: "Blooming",
-      description: "Educational platform introducing children to technology with a specially designed interface for young users.",
-      image: "/notFound.png",
-      technologies: ["React", "Express", "TypeScript"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/SafeZoneProject/frontMyBooming.git",
-    },
-    {
-      title: "Sehatra.com",
-      description: "Improved the interface and user experience of the company website with modern, intuitive, and consistent pages.",
-      image: "/sehatra.png",
-      technologies: ["Django Rest", "Python", "ReactJS"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/Heryn31/Stage-Sehatra.git",
-    },
-  ]
+  {
+    title: "Parc National de Madagascar",
+    description: "Conception et développement d'une application web ergonomique pour le Parc National de Madagascar, avec un focus sur l'ergonomie et l'interaction homme-machine.",
+    image: "/park.png",
+    technologies: ["ExpressJS", "NodeJS", "ReactJS"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Heryn31/Project-IHM.git",
+  },
+  {
+    title: "Streamusic",
+    description: "Application mobile de streaming audio permettant une écoute simultanée et des fonctionnalités collaboratives pour une expérience utilisateur interactive.",
+    image: "/notFound.png",
+    technologies: ["Kotlin", "Jetpack Compose", "NodeJS", "SocketIO", "Firebase Authentication"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Heryn31/Streamusic.git",
+  },
+  {
+    title: "Carlocation",
+    description: "Application web de gestion de location de voitures, développée avec deux stacks technologiques différentes.",
+    image: "/location.png",
+    technologies: ["Spring Boot", "Java", "ExpressJS", "NodeJS", "ReactJS"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Heryn31/Project-Spring-Boot---Java.git",
+  },
+  {
+    title: "Blooming",
+    description: "Plateforme éducative initiant les enfants à la technologie, avec une interface spécialement conçue pour les jeunes utilisateurs.",
+    image: "/notFound.png",
+    technologies: ["React", "Express", "TypeScript"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/SafeZoneProject/frontMyBooming.git",
+  },
+  {
+    title: "Sehatra.com",
+    description: "Amélioration de l'interface et de l'expérience utilisateur du site web de l'entreprise avec des pages modernes, intuitives et cohérentes.",
+    image: "/sehatra.png",
+    technologies: ["Django Rest", "Python", "ReactJS"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Heryn31/Stage-Sehatra.git",
+  },
+];
+
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -61,12 +62,13 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <GlitchText
-            text="Featured Projects"
+            text="Projets phares"
             className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
           />
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A showcase of my recent work, demonstrating expertise in modern web technologies
+            Une sélection de mes réalisations récentes, démontrant mon expertise dans les technologies web modernes.
           </p>
+
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

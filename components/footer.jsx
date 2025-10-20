@@ -5,9 +5,9 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react"
 
 export function Footer() {
   const socialLinks = [
-    { icon: <Github size={20} />, href: "#", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "#", label: "LinkedIn" },
-    { icon: <Mail size={20} />, href: "#", label: "Email" },
+    { icon: <Github size={20} />, href: "https://github.com/Heryn31", label: "GitHub" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/heryn31/", label: "LinkedIn" },
+    { icon: <Mail size={20} />, href: "mailto:herynnantenaina31@gmail.com", label: "Email" },
   ]
 
   return (
@@ -23,7 +23,7 @@ export function Footer() {
           {/* Logo */}
           <div className="mb-8">
             <h3 className="font-sans text-2xl font-bold text-card-foreground">heryn.</h3>
-            <p className="font-serif text-muted-foreground mt-2">Full stack web/mobile developer</p>
+            <p className="font-serif text-muted-foreground mt-2">Développeur web - Mobile</p>
           </div>
 
           {/* Social Links */}
@@ -54,8 +54,7 @@ export function Footer() {
             className="pt-8 border-t border-border"
           >
             <p className="font-serif text-muted-foreground flex items-center justify-center gap-2">
-              © 2024 Made by heryn using React &
-              Tailwind CSS
+              © 2024 Heryn . Tout droits réservés. Made with <Heart className="w-4 h-4 text-red-900" />.
             </p>
           </motion.div>
         </motion.div>

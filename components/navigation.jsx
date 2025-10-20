@@ -12,13 +12,14 @@ export function Navigation() {
   const [activeSection, setActiveSection] = useState("home")
 
   const navItems = [
-    { name: "Home", href: "#", id: "home" },
-    { name: "About", href: "#about", id: "about" },
-    { name: "Education", href: "#education", id: "education" },
-    { name: "Projects", href: "#projects", id: "projects" },
-    { name: "Skills", href: "#skills", id: "skills" },
+    { name: "Accueil", href: "#", id: "home" },
+    { name: "À propos", href: "#about", id: "about" },
+    { name: "Éducation", href: "#education", id: "education" },
+    { name: "Projets", href: "#projects", id: "projects" },
+    { name: "Compétences", href: "#skills", id: "skills" },
     { name: "Contact", href: "#contact", id: "contact" },
-  ]
+  ];
+
 
   useEffect(() => {
     const handleScroll = () => {
