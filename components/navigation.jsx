@@ -97,7 +97,9 @@ export function Navigation() {
             className="hidden md:flex items-center space-x-4"
           >
             <ThemeToggle />
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Hire Me</Button>
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              M'engager
+            </Button>
           </motion.div>
 
           {/* Mobile Menu Button */}
@@ -139,7 +141,7 @@ export function Navigation() {
                 <div className="flex justify-center">
                   <ThemeToggle />
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Hire Me</Button>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">M'engager</Button>
               </div>
             </div>
           </motion.div>
