@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
-import { ThemeToggle } from "./theme-toggle"
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Languages, Menu, PhoneCall, X } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
     { name: "Accueil", href: "#", id: "home" },
@@ -20,25 +20,24 @@ export function Navigation() {
     { name: "Contact", href: "#contact", id: "contact" },
   ];
 
-
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+      setIsScrolled(window.scrollY > 50);
 
-      const sections = navItems.map((item) => item.id)
-      const scrollPosition = window.scrollY + 100
+      const sections = navItems.map((item) => item.id);
+      const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i])
+        const section = document.getElementById(sections[i]);
         if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i])
-          break
+          setActiveSection(sections[i]);
+          break;
         }
       }
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <motion.nav
@@ -46,7 +45,9 @@ export function Navigation() {
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" : "bg-transparent"
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -57,7 +58,10 @@ export function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <a href="#" className="font-sans text-2xl font-bold text-foreground">
+            <a
+              href="#"
+              className="font-sans text-2xl font-bold text-foreground"
+            >
               heryn.
             </a>
           </motion.div>
@@ -97,9 +101,13 @@ export function Navigation() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="hidden md:flex items-center space-x-4"
           >
+            <Button variant={"ghost"}>
+              <Languages />
+            </Button>
             <ThemeToggle />
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              M'engager
+            <Button variant={"primary"}>
+              <PhoneCall />
+              Contact
             </Button>
           </motion.div>
 
@@ -142,12 +150,14 @@ export function Navigation() {
                 <div className="flex justify-center">
                   <ThemeToggle />
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">M'engager</Button>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                  M'engager
+                </Button>
               </div>
             </div>
           </motion.div>
         )}
       </div>
     </motion.nav>
-  )
+  );
 }

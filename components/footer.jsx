@@ -11,8 +11,8 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-card w-full border-t border-border">
+      <div className="mx-auto px-4 py-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

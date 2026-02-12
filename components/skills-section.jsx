@@ -12,8 +12,8 @@ export function SkillsSection() {
         { name: "JavaScript", level: 89 },
         { name: "React.js", level: 90 },
         { name: "TypeScript", level: 70 },
-        { name: "Tailwind CSS", level: 89 },
-        { name: "Framer Motion", level: 90 },
+        { name: "Next.js", level: 89 },
+        { name: "Tailwind CSS", level: 90 },
       ],
     },
     {
@@ -21,15 +21,16 @@ export function SkillsSection() {
       skills: [
         { name: "Node.js", level: 89 },
         { name: "Express.js", level: 89 },
+        { name: "Laravel 12", level: 80 },
+        { name: "Python 8", level: 80 },
+        { name: "Django Rest", level: 75 },
         { name: "Java", level: 65 },
-        { name: "Python", level: 80 },
-        { name: "Django Rest API", level: 75 },
-        { name: "Kotlin", level: 60 },
         { name: "Spring Boot", level: 65 },
+        { name: "Kotlin", level: 60 },
       ],
     },
     {
-      title: "Tools & Others",
+      title: "Outils et autres",
       skills: [
         { name: "Git", level: 90 },
         { name: "Docker", level: 55 },
@@ -53,12 +54,12 @@ export function SkillsSection() {
           className="text-center mb-16"
         >
          <GlitchText
-  text="Langages & Technologies"
-  className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
-/>
-<p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-  Mon expertise technique couvre les technologies web modernes ainsi que les outils de design.
-</p>
+          text="Langages & Technologies"
+          className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter"
+        />
+        <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          Mon expertise technique couvre les technologies web modernes ainsi que les outils de design.
+        </p>
 
         </motion.div>
 
@@ -82,8 +83,7 @@ export function SkillsSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-primary text-primary-foreground px-6 py-3 font-semibold shadow-lg"
               >
                 {language}
               </motion.div>
@@ -117,7 +117,7 @@ export function SkillsSection() {
                         className="space-y-2"
                       >
                         <div className="flex justify-between items-center">
-                          <span className="font-serif text-muted-foreground">{skill.name}</span>
+                          <span className="font-serif text-sm text-muted-foreground">{skill.name}</span>
                           <span className="font-serif text-sm text-primary font-medium">{skill.level}%</span>
                         </div>
                         <div className="w-full bg-muted rounded-full h-2">

@@ -1,12 +1,13 @@
-"use client"
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
-import { useState } from "react"
-import { GlitchText } from "./glitch-text"
+"use client";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
+import { GlitchText } from "./glitch-text";
+import Image from "next/image";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -14,20 +15,20 @@ export function ContactSection() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   const contactInfo = [
     {
@@ -48,7 +49,7 @@ export function ContactSection() {
       value: "Fianarantsoa, HM",
       link: "#",
     },
-  ]
+  ];
 
   return (
     <section id="contact" className="py-20 bg-muted/30">
@@ -60,17 +61,18 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <GlitchText 
-            text="Contactez-moi" 
-            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" 
+          <GlitchText
+            text="Contactez-moi"
+            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
           />
 
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Prenez contact avec moi pour discuter de vos projets, collaborations ou toute autre opportunité passionnante.
+            Prenez contact avec moi pour discuter de vos projets, collaborations
+            ou toute autre opportunité passionnante.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto flex justify-center items-center">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -80,12 +82,23 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="font-sans text-2xl font-semibold text-foreground mb-6">Entrons en contact</h3>
+              <h3 className="font-sans text-2xl font-semibold text-foreground mb-6">
+                Entrons en contact
+              </h3>
+              <Image
+                src="/status2.png"
+                alt="Contact status image"
+                width={800}
+                height={600}
+                loading="lazy"
+              />
               <p className="font-serif text-muted-foreground leading-relaxed mb-8">
-                Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Que vous ayez une question ou que vous souhaitiez simplement me dire bonjour, je ferai de mon mieux pour vous répondre !
+                Je suis toujours intéressé par de nouvelles opportunités et des
+                projets passionnants. Que vous ayez une question ou que vous
+                souhaitiez simplement me dire bonjour, je ferai de mon mieux
+                pour vous répondre !
               </p>
             </div>
-
 
             <div className="grid grid-cols-3 gap-4">
               {contactInfo.map((info, index) => (
@@ -98,7 +111,9 @@ export function ContactSection() {
                 >
                   <a href={info.link} className="block group">
                     <div className="bg-card border border-border rounded-lg p-4 h-24 flex flex-col items-center justify-center hover:shadow-lg hover:border-primary/50 transition-all duration-300 group-hover:scale-105">
-                      <div className="mb-2 group-hover:text-primary transition-colors">{info.icon}</div>
+                      <div className="mb-2 group-hover:text-primary transition-colors">
+                        {info.icon}
+                      </div>
                       <span className="font-sans text-xs font-medium text-card-foreground group-hover:text-primary transition-colors text-center">
                         {info.title}
                       </span>
@@ -121,7 +136,10 @@ export function ContactSection() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block font-serif text-sm font-medium text-card-foreground mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block font-serif text-sm font-medium text-card-foreground mb-2"
+                      >
                         Nom
                       </label>
                       <Input
@@ -136,7 +154,10 @@ export function ContactSection() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block font-serif text-sm font-medium text-card-foreground mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block font-serif text-sm font-medium text-card-foreground mb-2"
+                      >
                         Email
                       </label>
                       <Input
@@ -153,7 +174,10 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block font-serif text-sm font-medium text-card-foreground mb-2">
+                    <label
+                      htmlFor="subject"
+                      className="block font-serif text-sm font-medium text-card-foreground mb-2"
+                    >
                       Sujet
                     </label>
                     <Input
@@ -169,7 +193,10 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block font-serif text-sm font-medium text-card-foreground mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block font-serif text-sm font-medium text-card-foreground mb-2"
+                    >
                       Message
                     </label>
                     <Textarea
@@ -199,5 +226,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

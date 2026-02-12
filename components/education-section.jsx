@@ -50,9 +50,9 @@ export function EducationSection() {
         >
           <GlitchText 
             text="Éducation" 
-            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6" 
+            className="font-mono text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter" 
           />
-          <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="font-mono text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Apprentissage continu et développement professionnel dans le domaine des technologies
           </p>
 
@@ -82,11 +82,11 @@ export function EducationSection() {
                         <div className="flex-shrink-0 md:hidden">{item.icon}</div>
                         <div className="flex-1">
                           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                            <h3 className="font-sans text-xl font-semibold text-card-foreground">{item.degree}</h3>
-                            <span className="font-serif text-sm text-primary font-medium">{item.year}</span>
+                            <h3 className="font-mono text-xl font-semibold text-card-foreground">{item.degree}</h3>
+                            <span className="font-mono text-sm text-primary font-medium">{item.year}</span>
                           </div>
-                          <h4 className="font-serif text-lg text-muted-foreground mb-3">{item.institution}</h4>
-                          <p className="font-serif text-muted-foreground leading-relaxed">{item.description}</p>
+                          <h4 className="font-mono text-lg text-muted-foreground mb-3">{item.institution}</h4>
+                          <p className="font-mono text-muted-foreground leading-relaxed">{item.description}</p>
                         </div>
                         <div className="flex-shrink-0 hidden md:block">{item.icon}</div>
                       </div>

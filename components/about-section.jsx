@@ -52,36 +52,19 @@ export function AboutSection() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="relative">
-              <div className="w-full h-150 rounded-lg overflow-hidden">
-                <img
-                  src="/profile-photo.png"
-                  alt="Professional headshot"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="font-sans text-5xl font-bold text-foreground">
-              <span className="text-[var(--primary)]">D</span>evenir développeur web
+            <h3 className="font-mono text-5xl font-bold text-foreground">
+              <span className="text-[var(--primary)] tracking-tighter">Développeur web</span>
             </h3>{" "}
-            <h3 className="font-sans text-2xl font-semibold text-foreground">
+            <h3 className="font-mono text-2xl font-semibold text-foreground tracking-tighter">
               C’est avant tout une passion
             </h3>{" "}
-            <p className="font-serif text-muted-foreground leading-relaxed">
+            <p className="font-mono text-muted-foreground leading-relaxed">
               {" "}
               J’ai commencé en tant que graphiste, avant de découvrir ma
               véritable passion pour le développement web. Depuis, je crée des
@@ -89,12 +72,27 @@ export function AboutSection() {
               crois profondément au pouvoir du bon design pour résoudre des
               problèmes concrets et créer des connexions significatives.{" "}
             </p>{" "}
-            <p className="font-serif text-muted-foreground leading-relaxed">
+            <p className="font-mono text-muted-foreground leading-relaxed">
               {" "}
               Lorsque je ne code pas, je m’inspire des nouvelles tendances en
               design, je contribue à des projets open source, ou je savoure un
               bon café tout en esquissant de nouvelles idées.{" "}
             </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="space-y-12"
+          >
+             <div className="w-full h-150 overflow-hidden">
+              <img
+                src="/status.png"
+                alt="Professional status"
+                className="w-full h-full object-contain"
+              />
+            </div>
           </motion.div>
         </div>
 
@@ -110,10 +108,10 @@ export function AboutSection() {
               <Card className="h-full bg-card border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">{skill.icon}</div>
-                  <h4 className="font-sans text-xl font-semibold text-card-foreground mb-3">
+                  <h4 className="font-mono text-xl font-semibold text-card-foreground mb-3">
                     {skill.title}
                   </h4>
-                  <p className="font-serif text-muted-foreground leading-relaxed">
+                  <p className="font-mono text-muted-foreground leading-relaxed">
                     {skill.description}
                   </p>
                 </CardContent>

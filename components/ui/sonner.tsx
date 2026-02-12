@@ -9,9 +9,8 @@ export function ToasterColored() {
   return (
     <Toaster
       theme={theme === "dark" ? "dark" : "light"}
-      position="bottom-center"
+      position="bottom-right"
       richColors
-      closeButton
     />
   )
 }

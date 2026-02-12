@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { ArrowUpRightFromSquare, ExternalLink, Github } from "lucide-react"
 import { GlitchText } from "./glitch-text"
 
 export function ProjectsSection() {
@@ -19,7 +19,6 @@ export function ProjectsSection() {
   {
     title: "Streamusic",
     description: "Application mobile de streaming audio permettant une écoute simultanée et des fonctionnalités collaboratives pour une expérience utilisateur interactive.",
-    image: "/notFound.png",
     technologies: ["Kotlin", "Jetpack Compose", "NodeJS", "SocketIO", "Firebase Authentication"],
     liveUrl: "#",
     githubUrl: "https://github.com/Heryn31/Streamusic.git",
@@ -35,8 +34,7 @@ export function ProjectsSection() {
   {
     title: "Blooming",
     description: "Plateforme éducative initiant les enfants à la technologie, avec une interface spécialement conçue pour les jeunes utilisateurs.",
-    image: "/notFound.png",
-    technologies: ["React", "Express", "TypeScript"],
+    technologies: ["ReactJS", "Express", "TypeScript"],
     liveUrl: "#",
     githubUrl: "https://github.com/SafeZoneProject/frontMyBooming.git",
   },
@@ -45,6 +43,13 @@ export function ProjectsSection() {
     description: "Amélioration de l'interface et de l'expérience utilisateur du site web de l'entreprise avec des pages modernes, intuitives et cohérentes.",
     image: "/sehatra.png",
     technologies: ["Django Rest", "Python", "ReactJS"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Heryn31/Stage-Sehatra.git",
+  },
+  {
+    title: "Nudacy Records",
+    description: "Conception et developement d'un systeme de paiement mobile",
+    technologies: ["Laravel 12", "TypeScript", "ReactJS"],
     liveUrl: "#",
     githubUrl: "https://github.com/Heryn31/Stage-Sehatra.git",
   },
@@ -63,7 +68,7 @@ export function ProjectsSection() {
         >
           <GlitchText
             text="Projets phares"
-            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
+            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter"
           />
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Une sélection de mes réalisations récentes, démontrant mon expertise dans les technologies web modernes.
@@ -80,7 +85,7 @@ export function ProjectsSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full bg-card border-border hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <Card className="bg-card border-border hover:shadow-xl transition-all duration-300 group overflow-hidden">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image || "/placeholder.svg"}
@@ -116,6 +121,19 @@ export function ProjectsSection() {
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
                         Code
+                      </a>
+                    </Button>
+                  )}
+                  {project.liveUrl && (
+                    <Button
+                      size="sm"
+                      variant="default"
+                      className="flex-1"
+                      asChild
+                    >
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <ArrowUpRightFromSquare className="w-4 h-4 mr-2" />
+                        Live
                       </a>
                     </Button>
                   )}

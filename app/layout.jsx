@@ -1,13 +1,11 @@
-import { Poppins } from "next/font/google"
+import { Geist_Mono, Geist } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ToasterColored } from "@/components/ui/sonner"
 
-const poppins = Poppins({
+const gestmono = Geist_Mono({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-poppins",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-geist-mono"
 })
 
 export const metadata = {
@@ -21,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} antialiased`} suppressHydrationWarning>
+    <html lang="en" className={`${gestmono.variable} antialiased`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange={false}>
             {children}
