@@ -8,6 +8,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { GlitchText } from "./glitch-text";
 import Image from "next/image";
+import {toast} from "sonner"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -17,10 +18,28 @@ export function ContactSection() {
     message: "",
   });
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error();
+
+      toast.success("Message envoyé avec succès !");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast.error("Une erreur est survenue. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -213,11 +232,12 @@ export function ContactSection() {
 
                   <Button
                     type="submit"
+                    disabled={loading}
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                     size="lg"
                   >
                     <Send className="w-4 h-4 mr-2" />
-                    Envoyer le message
+                    {loading ? "Envoi..." : "Envoyer le message"}
                   </Button>
                 </form>
               </CardContent>
