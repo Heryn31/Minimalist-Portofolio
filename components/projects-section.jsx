@@ -68,7 +68,7 @@ export function ProjectsSection() {
         >
           <GlitchText
             text="Projets phares"
-            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter"
+            className="font-title text-4xl md:text-8xl font-bold text-foreground mb-6 tracking-tighter"
           />
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Une sélection de mes réalisations récentes, démontrant mon expertise dans les technologies web modernes.
@@ -96,7 +96,7 @@ export function ProjectsSection() {
                 </div>
 
                 <CardContent className="p-6">
-                  <h3 className="font-sans text-xl font-semibold text-card-foreground mb-3">{project.title}</h3>
+                  <h3 className="font-title text-xl font-semibold text-card-foreground mb-3">{project.title}</h3>
                   <p className="font-serif text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-6">

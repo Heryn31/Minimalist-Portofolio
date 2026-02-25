@@ -52,21 +52,19 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
-      title: "Email",
+      title: "herynnantenaina31@gmail.com",
       value: "herynnantenaina31@gmail.com",
       link: "mailto:herynnantenaina31@gmail.com",
     },
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
-      title: "Phone",
-      value: "0343050971",
-      link: "0343050971",
+      title: "+261 34 30 509 71",
+      value: "+261 34 30 509 71",
     },
     {
       icon: <MapPin className="w-6 h-6 text-primary" />,
-      title: "Localisation",
-      value: "Fianarantsoa, HM",
-      link: "#",
+      title: "Antsirabe, Antananarivo, Madagascar",
+      value: "Antsirabe, Antananarivo, Madagascar",
     },
   ];
 
@@ -82,7 +80,7 @@ export function ContactSection() {
         >
           <GlitchText
             text="Contactez-moi"
-            className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6"
+            className="font-title text-4xl md:text-8xl font-bold text-foreground mb-6"
           />
 
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -101,16 +99,6 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="font-sans text-2xl font-semibold text-foreground mb-6">
-                Entrons en contact
-              </h3>
-              <Image
-                src="/status2.png"
-                alt="Contact status image"
-                width={800}
-                height={600}
-                loading="lazy"
-              />
               <p className="font-serif text-muted-foreground leading-relaxed mb-8">
                 Je suis toujours intéressé par de nouvelles opportunités et des
                 projets passionnants. Que vous ayez une question ou que vous
@@ -119,7 +107,7 @@ export function ContactSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-rows-3 gap-4">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={info.title}

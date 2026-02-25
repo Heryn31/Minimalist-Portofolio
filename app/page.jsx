@@ -8,6 +8,7 @@ import { ProjectsSection } from "@/components/projects-section"
 import { SkillsSection } from "@/components/skills-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { BrandSection } from "../components/brand-section"
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <section id="skills">
         <SkillsSection />
       </section>
+      <BrandSection/>
       <ContactSection />
       <Footer />
     </main>

@@ -55,7 +55,7 @@ export function SkillsSection() {
         >
          <GlitchText
           text="Langages & Technologies"
-          className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter"
+          className="font-title text-4xl md:text-8xl font-bold text-foreground mb-6 tracking-tighter"
         />
         <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Mon expertise technique couvre les technologies web modernes ainsi que les outils de design.

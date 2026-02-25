@@ -50,7 +50,7 @@ export function EducationSection() {
         >
           <GlitchText 
             text="Éducation" 
-            className="font-mono text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tighter" 
+            className="font-title text-4xl md:text-8xl font-bold text-foreground mb-6 tracking-tighter" 
           />
           <p className="font-mono text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Apprentissage continu et développement professionnel dans le domaine des technologies

@@ -56,12 +56,27 @@ export function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="space-y-12"
+          >
+             <div className="w-full h-150 overflow-hidden">
+              <img
+                src="/status.png"
+                alt="Professional status"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="font-mono text-5xl font-bold text-foreground">
+            <h3 className="font-title text-4xl md:text-8xl font-bold text-foreground">
               <span className="text-[var(--primary)] tracking-tighter">Développeur web</span>
             </h3>{" "}
-            <h3 className="font-mono text-2xl font-semibold text-foreground tracking-tighter">
+            <h3 className="font-title text-2xl font-semibold text-foreground tracking-tighter">
               C’est avant tout une passion
             </h3>{" "}
             <p className="font-mono text-muted-foreground leading-relaxed">
@@ -79,21 +94,6 @@ export function AboutSection() {
               bon café tout en esquissant de nouvelles idées.{" "}
             </p>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-12"
-          >
-             <div className="w-full h-150 overflow-hidden">
-              <img
-                src="/status.png"
-                alt="Professional status"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </motion.div>
         </div>
 
         <div className="grid md:grid-cols-6 gap-8">
@@ -108,7 +108,7 @@ export function AboutSection() {
               <Card className="h-full bg-card border-border hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 flex justify-center">{skill.icon}</div>
-                  <h4 className="font-mono text-xl font-semibold text-card-foreground mb-3">
+                  <h4 className="font-title text-xl font-semibold text-card-foreground mb-3">
                     {skill.title}
                   </h4>
                   <p className="font-mono text-muted-foreground leading-relaxed">

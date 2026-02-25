@@ -148,6 +148,7 @@
   --font-sans: var(--font-geist-mono);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-geist-mono);
+  --font-title: var(--font-poppins);
 }
 
 @layer base {
@@ -196,20 +197,21 @@
     filter: grayscale(100%) contrast(1.2);
   }
 
+  #contact.div {
+    background-image: url(/status2.png);
+    background-size: contain;
+    background-position: center;
+    filter: grayscale(100%) contrast(1.2);
+  }
+
   body::before {
   content: "";
   position: fixed;
   inset: 0;
   background-image: url("/noise.png");
   background-repeat: repeat;
-  opacity: 0.09; /* ajuste ici */
+  opacity: 0.02; /* ajuste ici */
   pointer-events: none;
   z-index: 9999;
   }
-
-  img {
-  filter: grayscale(100%) contrast(1.2);
-  }
-
-
 }

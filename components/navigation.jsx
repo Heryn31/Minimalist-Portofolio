@@ -105,9 +105,11 @@ export function Navigation() {
               <Languages />
             </Button>
             <ThemeToggle />
-            <Button variant={"primary"}>
-              <PhoneCall />
-              Contact
+            <Button asChild variant="default">
+              <a href="#contact">
+                <PhoneCall className="mr-2 h-4 w-4" />
+                Contact
+              </a>
             </Button>
           </motion.div>
 

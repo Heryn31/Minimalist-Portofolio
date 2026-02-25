@@ -12,7 +12,7 @@ export function Footer() {
 
   return (
     <footer className="bg-card w-full border-t border-border">
-      <div className="mx-auto px-4 py-12">
+      <div className="mx-auto px-4 py-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,11 +23,11 @@ export function Footer() {
           {/* Logo */}
           <div className="mb-8">
             <h3 className="font-sans text-2xl font-bold text-card-foreground">heryn.</h3>
-            <p className="font-serif text-muted-foreground mt-2">Développeur web - Mobile</p>
+            <p className="font-serif text-muted-foreground mt-2">Développeur web</p>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6 mb-8">
+          <div className="flex justify-center gap-6">
             {socialLinks.map((link, index) => (
               <motion.a
                 key={link.label}
@@ -51,10 +51,10 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="pt-8 border-t border-border"
+            className="pt-8 border-border"
           >
             <p className="font-serif text-muted-foreground flex items-center justify-center gap-2">
-              © 2024 Heryn . Tout droits réservés. Made with <Heart className="w-4 h-4 text-red-900" />.
+              © 2026 Heryn . Tout droits réservé.
             </p>
           </motion.div>
         </motion.div>

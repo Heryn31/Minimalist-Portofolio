@@ -40,23 +40,8 @@ export function HeroSection() {
       </motion.div>
 
       <div className="grid md:grid-cols-2 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="relative">
-            <div className="w-full h-100 overflow-hidden">
-              <img
-                src="/profile-photo.png"
-                alt="Professional headshot"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </motion.div>
-        <div className="container mx-auto px-4 text-end relative z-30">
+        
+        <div className="container mx-auto px-4 text-center relative z-30">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,15 +53,15 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              <h1 className="font-mono mb-6">
-                <span className="text-[var(--primary)] font-bold text-xl sm:text-6xl tracking-tighter">
+              <h1 className="font-title mb-6">
+                <span className="text-[var(--primary)] font-bold text-xl sm:text-8xl tracking-tighter">
                   Herinantenaina
                 </span>
               </h1>
             </motion.div>
 
             <motion.p
-              className="font-mono text-xl sm:text-4xl mb-8 leading-relaxed tracking-tighter"
+              className="font-title font-bold text-xl sm:text-4xl mb-8 leading-relaxed tracking-tighter"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -127,6 +112,22 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="relative">
+            <div className="w-full h-100 overflow-hidden">
+              <img
+                src="/profile-photo.png"
+                alt="Professional headshot"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
