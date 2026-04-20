@@ -69,7 +69,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="border py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -80,7 +80,7 @@ export function ContactSection() {
         >
           <GlitchText
             text="Contactez-moi"
-            className="font-title text-4xl md:text-8xl font-bold text-foreground mb-6"
+            className="font-title text-4xl md:text-8xl font-bold tracking-tighter text-foreground mb-6"
           />
 
           <p className="font-serif text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">

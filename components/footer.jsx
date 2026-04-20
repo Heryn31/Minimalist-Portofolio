@@ -22,7 +22,7 @@ export function Footer() {
         >
           {/* Logo */}
           <div className="mb-8">
-            <h3 className="font-sans text-2xl font-bold text-card-foreground">heryn.</h3>
+            <h3 className="font-sans text-2xl font-bold text-card-foreground tracking-tighter">herinantenaina.</h3>
             <p className="font-serif text-muted-foreground mt-2">Développeur web</p>
           </div>
 

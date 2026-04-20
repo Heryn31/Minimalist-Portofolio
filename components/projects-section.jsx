@@ -57,7 +57,7 @@ export function ProjectsSection() {
 
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="border py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -85,7 +85,7 @@ export function ProjectsSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-card border-border hover:shadow-xl transition-all duration-300 group overflow-hidden">
+              <Card className="bg-card h-full border-border hover:shadow-xl transition-all duration-300 group overflow-hidden">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image || "/placeholder.svg"}
@@ -124,7 +124,7 @@ export function ProjectsSection() {
                       </a>
                     </Button>
                   )}
-                  {project.liveUrl && (
+                  {/* {project.liveUrl && (
                     <Button
                       size="sm"
                       variant="default"
@@ -136,7 +136,7 @@ export function ProjectsSection() {
                         Live
                       </a>
                     </Button>
-                  )}
+                  )} */}
                   </div>
                 </CardContent>
               </Card>

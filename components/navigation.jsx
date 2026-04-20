@@ -60,9 +60,9 @@ export function Navigation() {
           >
             <a
               href="#"
-              className="font-sans text-2xl font-bold text-foreground"
+              className="font-sans text-2xl font-bold text-foreground tracking-tighter"
             >
-              heryn.
+              herinantenaina.
             </a>
           </motion.div>
 
@@ -101,10 +101,10 @@ export function Navigation() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="hidden md:flex items-center space-x-4"
           >
-            <Button variant={"ghost"}>
+            {/* <Button variant={"ghost"}>
               <Languages />
-            </Button>
-            <ThemeToggle />
+            </Button> */}
+            {/* <ThemeToggle /> */}
             <Button asChild variant="default">
               <a href="#contact">
                 <PhoneCall className="mr-2 h-4 w-4" />
@@ -149,9 +149,9 @@ export function Navigation() {
               ))}
               <div className="px-4 pt-2 space-y-2">
                 {/* Theme Toggle */}
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                   <ThemeToggle />
-                </div>
+                </div> */}
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                   M'engager
                 </Button>

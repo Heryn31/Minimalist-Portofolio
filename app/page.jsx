@@ -9,8 +9,23 @@ import { SkillsSection } from "@/components/skills-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { BrandSection } from "../components/brand-section"
+import { Loader } from "@/components/loader"
+import { Media } from "@/components/media"
+import { useState, useEffect } from "react"
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // Affiche le loader pendant 3 secondes
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <main className="min-h-screen">
       <Navigation />
@@ -20,6 +35,9 @@ export default function Home() {
       <section id="about">
         <AboutSection />
       </section>
+       {/* <section id="media">
+        <Media />
+      </section> */}
       <section id="education">
         <EducationSection />
       </section>

@@ -39,7 +39,7 @@ export function EducationSection() {
 
 
   return (
-    <section id="education" className="py-20 bg-background">
+    <section id="education" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -50,7 +50,7 @@ export function EducationSection() {
         >
           <GlitchText 
             text="Éducation" 
-            className="font-title text-4xl md:text-8xl font-bold text-foreground mb-6 tracking-tighter" 
+            className="font-title text-white text-4xl md:text-8xl font-bold text-foreground mb-6 tracking-tighter" 
           />
           <p className="font-mono text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Apprentissage continu et développement professionnel dans le domaine des technologies
@@ -71,7 +71,7 @@ export function EducationSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="relative"
+                  className="border-border relative"
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-6 top-6 w-4 h-4 bg-primary rounded-full border-4 border-background hidden md:block" />
